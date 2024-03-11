@@ -12,7 +12,6 @@ function Card({ item }) {
           </h1>
         </div>
         <div className="card-body">
-          
           <ul className="list-unstyled mt-3 mb-4">
             {item.features.map((feature, index) => {
               return (
@@ -25,7 +24,9 @@ function Card({ item }) {
                   ) : (
                     <>
                       {" "}
-                      <span style={{color:"lightgray"}}><ImCross size={9} /> {feature.name}</span>
+                      <span style={{ color: "lightgray" }}>
+                        <ImCross size={9} /> {feature.name}
+                      </span>
                     </>
                   )}
                 </li>
